@@ -16,10 +16,14 @@ class Scoreboard:
         self.prep_ships()
         self.prep_score()
         self.prep_high_score()
+        self.ships = Group()
+        self.score_image = None
+        self.score_rect = None
+        self.high_score_image = None
+        self.high_score_rect = None
 
 
     def prep_ships(self):
-        self.ships = Group()
         for ship_number in range(self.stats.ships_remaining):
             ship = Ship(self.game)
             ship.image = pygame.image.load("images/rocket-1374247_640_small.bmp")

@@ -158,7 +158,6 @@ class SpaceInveyders:
 
 
     def run_game(self):
-
         while True:
             self.check_events()
 
